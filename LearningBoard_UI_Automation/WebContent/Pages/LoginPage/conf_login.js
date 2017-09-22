@@ -4,7 +4,7 @@ exports.config = {
 	params : configurationFile,
 	framework : 'jasmine',
 	seleniumAddress : 'http://localhost:4444/wd/hub',
-	specs : [ 'login.js' ],
+	specs : [ 'spec_login.js' ],
 	jasmineNodeOpts : {
 		showColors : true,
 		defaultTimeoutInterval : 800000
