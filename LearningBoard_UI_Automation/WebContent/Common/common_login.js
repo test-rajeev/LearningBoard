@@ -1,5 +1,8 @@
 var ObjectsLocators = require('../ObjectRepository/ObjectsLocators.js');
+var CommonWait = require('../Common/common_wait.js');
+
 var objectslocators = new ObjectsLocators();
+var commonwait= new CommonWait();
 
 module.exports = function() {
 	// var obj= JSON.parse(fs.readFileSync('WebContent\Resources\testdata.json','utf8'));
@@ -11,13 +14,17 @@ module.exports = function() {
 					objectslocators.userInput.sendKeys(username);
 					objectslocators.passwordInput.sendKeys(password);
 					objectslocators.loginButton.click();
+					//commonwait.waitForPresence(objectslocators.iscSpace,5000);
 				});
 	};
 
 	this.qawrkspce = function() {
+		if(browser.params.multiplespace==1){
 		browser.wait(EC.visibilityOf(objectslocators.iscSpace), 3000).then(
 				function() {
 					objectslocators.iscSpace.click();
+					//commonwait.waitForVisiblity(objectslocators.welcomeText,5000);
 				});
 	};
+  }
 };
