@@ -1,5 +1,5 @@
 var configurationFile = require('../../Resources/testdata.json');
-//var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 exports.config = {
 	params : configurationFile,
 	framework : 'jasmine',
@@ -10,13 +10,13 @@ exports.config = {
 		defaultTimeoutInterval : 800000
 	},
 	onPrepare : function() {
-		/*jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({
+		jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({
 			savePath : 'WebContent/Reports/login',
 			screenshotsFolder : 'images',
-			 takeScreenshotsOnlyOnFailures:true,
+			takeScreenshotsOnlyOnFailures:true,
 			fixedScreenshotName : true,
 
-		}));*/
+		}));
 		browser.driver.manage().window().maximize();
 	}
 }

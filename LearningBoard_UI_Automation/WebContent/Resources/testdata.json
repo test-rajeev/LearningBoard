@@ -1,6 +1,7 @@
 {
 "url":"http://52.88.107.104:8080",
 "username": "support@idp-dashboards.com",
-"password": "admin"
-
+"password": "admin",
+"multiplespace": 1,
+"spacekey":1112
 }
