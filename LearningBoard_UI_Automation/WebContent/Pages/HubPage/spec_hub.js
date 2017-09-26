@@ -16,7 +16,7 @@ describe('Testing Hub', function() {
 	//---------------TestingLogin-------------------------//
 	it('Login', function() {
 		loginPage.login(browser.params.username, browser.params.password);
-		browser.driver.sleep(2000);
+		browser.driver.sleep(6000);
 		
 		loginPage.qawrkspce();
 		browser.driver.sleep(9000);
