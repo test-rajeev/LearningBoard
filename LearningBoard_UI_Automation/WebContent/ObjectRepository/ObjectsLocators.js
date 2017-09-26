@@ -6,7 +6,8 @@ module.exports = function() {
 	this.userName=element(by.xpath(".//*[@id='navitem-user']"));
 	
 	this.welcomeText=element(by.xpath(".//*[@id='userWelcomeLink']/a/span[1]"));
+	this.iframe1=element(by.id("appIFrame"));
 	this.exitHelpOverlay=element(by.xpath("//div[@class='introjs-button introjs-skipbutton']"));
 	this.loginAsDrpDw=element(by.xpath(".//*[@id='userWelcomeLink']/a"));
-	this.loginAsISCTeacher=element(by.xpath(".//*[@id='loginAsTeacherUL']/li[@data-search-term="+browser.params.iscteacher+"]"));
+	this.loginAsISCTeacher=element(by.xpath(".//*[@value="+browser.params.iscteacher+"]"));
 }

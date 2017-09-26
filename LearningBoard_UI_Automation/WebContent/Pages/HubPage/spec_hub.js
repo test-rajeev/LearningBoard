@@ -26,12 +26,16 @@ describe('Testing Hub', function() {
 	
 	//---------------TestingLoginAs-------------------------//
 	it('HubLoginAs', function() {
-		objectslocators.exitHelpOverlay.click();
-		browser.driver.sleep(2000);
+		//loginPage.switchIFrame(objectslocators.iframe1);
+		//browser.driver.sleep(2000);
+		//objectslocators.exitHelpOverlay.click();
+		//browser.driver.sleep(2000);
+		
 		objectslocators.loginAsDrpDw.click();
 		browser.driver.sleep(3000);
 		objectslocators.loginAsISCTeacher.click();
-		browser.driver.sleep(6000);
+		browser.driver.sleep(5000);
+		expect("");
 	});
 	
 });

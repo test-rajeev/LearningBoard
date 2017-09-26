@@ -27,4 +27,9 @@ module.exports = function() {
 				});
 	};
   }
+	
+	this.switchIFrame = function(loc) {
+		browser.switchTo().frame(loc.getWebElement());
+  }
+	
 };
