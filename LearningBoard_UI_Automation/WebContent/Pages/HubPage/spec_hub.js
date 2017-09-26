@@ -38,4 +38,13 @@ describe('Testing Hub', function() {
 		expect(objectslocators.teacherName.getText()).toContain(browser.params.iscteachername);
 	});
 	
+	it('CalanderPagination', function() {
+		browser.switchTo().frame(objectslocators.iframe2onHubCalander.getWebElement());
+		objectslocators.nextPageiconinCalander.click();
+		browser.driver.sleep(3000);
+				
+		expect(objectslocators.paginationText.getText()).toContain(browser.params.paginationtext);
+		browser.switchTo().defaultContent();
+		});
+	
 });

@@ -11,4 +11,8 @@ module.exports = function() {
 	this.loginAsDrpDw=element(by.xpath(".//*[@id='userWelcomeLink']/a"));
 	this.loginAsISCTeacher=element(by.xpath(".//*[@value="+browser.params.iscteacher+"]"));
 	this.teacherName=element(by.id("navitem-user"));
+	
+	this.iframe2onHubCalander=element(by.id("appIFrame"));
+	this.nextPageiconinCalander= element(by.xpath("html/body/div[1]/div/div/div/div[2]/div[1]/div[2]/i[3]"));
+	this.paginationText= element(by.xpath("html/body/div[1]/div/div/div/div[2]/div[1]/div[2]/span"));
 }
