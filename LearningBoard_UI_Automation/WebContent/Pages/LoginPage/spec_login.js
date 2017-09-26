@@ -23,5 +23,6 @@ describe('Testing Login', function() {
 		
 		expect(browser.driver.getCurrentUrl()).toContain("learningBoard.html");
 		expect(objectslocators.welcomeText.getText()).toEqual("Welcome");
+		browser.driver.sleep(3000);
 	});
 });
