@@ -16,7 +16,7 @@ describe('Testing Hub', function() {
 	//---------------TestingLogin-------------------------//
 	it('Login', function() {
 		loginPage.login(browser.params.username, browser.params.password);
-		browser.driver.sleep(2000);
+		browser.driver.sleep(6000);
 		
 		loginPage.qawrkspce();
 		browser.driver.sleep(9000);
@@ -26,16 +26,16 @@ describe('Testing Hub', function() {
 	
 	//---------------TestingLoginAs-------------------------//
 	it('HubLoginAs', function() {
-		//loginPage.switchIFrame(objectslocators.iframe1);
-		//browser.driver.sleep(2000);
-		//objectslocators.exitHelpOverlay.click();
-		//browser.driver.sleep(2000);
-		
+	browser.switchTo().frame(objectslocators.iframe1.getWebElement());
+	objectslocators.exitHelpOverlay.click();
+	browser.driver.sleep(3000);
+	browser.switchTo().defaultContent();
+	
 		objectslocators.loginAsDrpDw.click();
 		browser.driver.sleep(3000);
 		objectslocators.loginAsISCTeacher.click();
-		browser.driver.sleep(5000);
-		expect("");
+		browser.driver.sleep(8000);		
+		expect(objectslocators.teacherName.getText()).toContain(browser.params.iscteachername);
 	});
 	
 });
