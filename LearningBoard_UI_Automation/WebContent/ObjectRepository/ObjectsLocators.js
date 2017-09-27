@@ -5,10 +5,33 @@ module.exports = function() {
 	this.iscSpace=element(by.xpath(".//*[@spacekey="+browser.params.spacekey+"]"));
 	this.userName=element(by.xpath(".//*[@id='navitem-user']"));
 	
+	this.hubDrpdwn= element(by.xpath(".//*[@id='CURRENT_APP_NAME']"));
+//	drp_apprel=//div[@class='k-list-scroller']//ul[@id='MulSel_Portfolio_listbox']//li[text()='Agribusiness']
+	this.hubItem= element(by.xpath(".//*[@id='__APP_MENU_ITEMS']/li[1]/a/div/div"));
+	this.sysAdminItem= element(by.xpath(".//*[@id='__APP_MENU_ITEMS']/li[2]/a/div/div"));
+	this.userManagementItem= element(by.xpath(".//*[@id='__APP_MENU_ITEMS']/li[7]/a/div/div"));
+
+	
 	this.welcomeText=element(by.xpath(".//*[@id='userWelcomeLink']/a/span[1]"));
 	this.iframe1=element(by.id("appIFrame"));
 	this.exitHelpOverlay=element(by.xpath("html/body/div[4]/div/div[5]/a[1]"));
 	this.loginAsDrpDw=element(by.xpath(".//*[@id='userWelcomeLink']/a"));
 	this.loginAsISCTeacher=element(by.xpath(".//*[@value="+browser.params.iscteacher+"]"));
 	this.teacherName=element(by.id("navitem-user"));
+	
+	this.iframe2onHubCalander=element(by.id("appIFrame"));
+	this.nextPageiconinCalander= element(by.xpath("html/body/div[1]/div/div/div/div[2]/div[1]/div[2]/i[3]"));
+	this.paginationText= element(by.xpath("html/body/div[1]/div/div/div/div[2]/div[1]/div[2]/span"));
+	
+	// hub menu items in ISC teacher login-----------------
+	this.wholehubcontainer= element(by.xpath(".//*[@id='bs-example-navbar-collapse-1']/div[2]"));
+	this.foundationItem= element(by.xpath(".//*[@id='__APP_MENU_ITEMS']/li[2]/a/div/div"));
+	this.feedbackItem= element(by.xpath(".//*[@id='__APP_MENU_ITEMS']/li[3]/a/div/div"));
+	this.analysisItem= element(by.xpath(".//*[@id='__APP_MENU_ITEMS']/li[4]/a/div/div"));
+	this.attendanceItem= element(by.xpath(".//*[@id='__APP_MENU_ITEMS']/li[5]/a/div/div"));
+	
+	this.helpoverlaysbttn= element(by.xpath("html/body/div[1]/div/div/div/div[1]/span[2]"));
+	//this.helpoverlaysbttn= element(by.css('[ng-click="CallMe()"]'));
+	
+	
 }

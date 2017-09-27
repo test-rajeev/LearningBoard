@@ -4,7 +4,7 @@ exports.config = {
 	params : configurationFile,
 	framework : 'jasmine',
 	seleniumAddress : 'http://localhost:4444/wd/hub',
-	restartBrowserBetweenSuites: true,
+	//restartBrowserBetweentests: true,
 	//specs : [ 'spec_login.js' ],
 	
 	suites: {
