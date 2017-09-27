@@ -9,7 +9,7 @@ module.exports = function() {
 	var EC = protractor.ExpectedConditions;
 
 	this.login = function(username, password) {
-		browser.wait(EC.visibilityOf(objectslocators.loginButton), 3000).then(
+		browser.wait(EC.visibilityOf(objectslocators.loginButton), 6000).then(
 				function() {
 					objectslocators.userInput.sendKeys(username);
 					objectslocators.passwordInput.sendKeys(password);
@@ -20,7 +20,7 @@ module.exports = function() {
 
 	this.qawrkspce = function() {
 		if(browser.params.multiplespace==1){
-		browser.wait(EC.visibilityOf(objectslocators.iscSpace), 3000).then(
+		browser.wait(EC.visibilityOf(objectslocators.iscSpace), 6000).then(
 				function() {
 					objectslocators.iscSpace.click();
 					//commonwait.waitForVisiblity(objectslocators.welcomeText,5000);

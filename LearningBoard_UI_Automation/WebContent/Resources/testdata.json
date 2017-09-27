@@ -6,5 +6,11 @@
 "spacekey":1112,
 "iscteacher":18219018,
 "iscteachername":"Asif",
-	"paginationtext": "Page 2 of 2"
+"paginationtext": "Page 2 of 2",
+"hubitem": "Hub",
+"sysadminitem": "Sys Admin",
+"usermanagementitem": "User Management",
+"foundationitem": "Foundation",
+"feedbackitem": "Feedback",
+"analysis": "Analysis"
 }
