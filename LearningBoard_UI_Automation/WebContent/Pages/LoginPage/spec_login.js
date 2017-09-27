@@ -10,6 +10,7 @@ describe('Testing Login', function() {
 	beforeAll(function() {
 		browser.ignoreSynchronization = true;
 		browser.get(browser.params.url);
+		
 		browser.driver.sleep(5000);
 	});
 
@@ -19,10 +20,11 @@ describe('Testing Login', function() {
 		browser.driver.sleep(5000);
 		
 		loginPage.qawrkspce();
-		browser.driver.sleep(5000);
-		
+		browser.driver.sleep(5000);		
 		expect(browser.driver.getCurrentUrl()).toContain("learningBoard.html");
 		expect(objectslocators.welcomeText.getText()).toEqual("Welcome");
 		browser.driver.sleep(3000);
-	});
+	
+		});
+	
 });
