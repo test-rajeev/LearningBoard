@@ -30,6 +30,20 @@ module.exports = function() {
 	
 	this.switchIFrame = function(loc) {
 		browser.switchTo().frame(loc.getWebElement());
-  }
+		
+		 }
 	
-};
+	this.logoutifloggedinearlier = function() {
+		
+	/*	if(objectslocators.loginButton.isDisplayed().toBe(false)){
+		browser.wait(EC.visibilityOf(objectslocators.welcomeText), 3000).then(
+				function() {*/
+					objectslocators.loggedinuserInfo.click();
+					browser.driver.sleep(1000);
+					objectslocators.logoutbttn.click();
+					browser.driver.sleep(2000);
+					
+				//});
+	};
+  };
+	
