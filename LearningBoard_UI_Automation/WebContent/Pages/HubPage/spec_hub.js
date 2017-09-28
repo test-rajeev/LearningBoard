@@ -91,7 +91,7 @@ describe('Testing Hub', function() {
 		browser.driver.sleep(3000);
 		browser.switchTo().defaultContent();
 		expect(objectslocators.welcomeText.getText()).toEqual("Welcome");
-		browser.driver.sleep(2000);
+		browser.driver.sleep(3000);
 		});
 	
 /*	it('logoutfromHub', function() {
