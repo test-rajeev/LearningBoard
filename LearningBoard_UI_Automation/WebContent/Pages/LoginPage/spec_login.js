@@ -27,4 +27,18 @@ describe('Testing Login', function() {
 	
 		});
 	
+	/*it('ExitHelpOverlays', function() {
+		browser.switchTo().frame(objectslocators.iframe1.getWebElement());
+		objectslocators.exitHelpOverlay.click();
+		browser.driver.sleep(3000);
+		browser.switchTo().defaultContent();
+		expect(objectslocators.welcomeText.getText()).toEqual("Welcome");
+	
+		});
+	
+	it('logoutafterLogin', function() {
+		loginPage.logoutifloggedinearlier();		
+		browser.driver.sleep(2000);
+		});*/
+	
 });

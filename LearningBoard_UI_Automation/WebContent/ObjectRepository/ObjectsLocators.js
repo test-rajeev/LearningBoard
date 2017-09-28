@@ -32,6 +32,15 @@ module.exports = function() {
 	
 	this.helpoverlaysbttn= element(by.xpath("html/body/div[1]/div/div/div/div[1]/span[2]"));
 	//this.helpoverlaysbttn= element(by.css('[ng-click="CallMe()"]'));
+	this.loggedinuserInfo= element(by.xpath(".//*[@id='bs-example-navbar-collapse-1']/ul/li[3]/a/i"));
+	this.logoutbttn= element(by.xpath(".//*[@id='logout']/a/span"));
 	
+	// feedback locators
+	this.feedbackbttninHub= element(by.xpath("//div[@class='select_top selecttop_hide']//ul[@id='__APP_MENU_ITEMS']//div[text()='Feedback']"));
+	this.CourseLabel= element(by.xpath("//div[@id='step1']//div[@class='form-group col-sm-3 col-md-12 col-md-nopad']//label[text()='Course']"));
+	//this.CourseLabel= element(by.xpath(".//*[@id='step1']/form/div/div[1]/label"));
+	this.Assessmenttypelbl= element(by.xpath("//div[@id='step2']//div[@class='form-group col-sm-3 col-md-12 col-md-nopad']//label[text()='Assessment type']"));
+	//this.Assessmenttypelbl= element(by.xpath(".//*[@id='step2']/div[2]/label"));
+	this.helpoverlaybttnOnFeedback = element(by.xpath("html/body/div[1]/div/div/div/div[2]/div[1]/span/span[1]"));
 	
 }
